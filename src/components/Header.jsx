@@ -6,7 +6,7 @@ export default function Header() {
   const location = useLocation()
 
   return (
-    <div className="bg-gradient-to-b from-gray-500  sticky top-0 z-50 py-1">
+    <div className="bg-gradient-to-b from-gray-500  sticky top-0 z-50 p-4">
       <header className="flex justify-between items-center px-80">
         <div className="mr-10">
           <Link to="/">
@@ -15,7 +15,9 @@ export default function Header() {
         </div>
         <div>
           <Link to="/contact" className="sm:text-green-500 md:text-red-700">
-            <h1>AVAILABLE FOR WORK</h1>
+            <div className="border rounded-full z-10 py-1 px-8 flex">
+              <h1>AVAILABLE FOR WORK</h1>
+            </div>
           </Link>
         </div>
         <div>
