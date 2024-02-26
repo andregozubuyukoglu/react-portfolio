@@ -5,23 +5,31 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <>
-      <div className="flex justify-between px-8">
-        <h1 className="">Designed and Developed by Andre Gözübüyükoğlu</h1>
-        <div className="">Copyright &copy; {currentYear}AG</div>
-        <ul className="flex justify-between space-x-4">
+    <div className="">
+      <div className="flex justify-around  px-16 py-4 bg-slate-200 items-stretch">
+        <h1 className="p-1">Developed by Andre Gözübüyükoğlu</h1>
+        <div className="p-1">Copyright &copy; {currentYear} AG</div>
+        <ul className="p-1 flex justify-between space-x-4">
           <li>
-            <a href="">
-              <FaGithub />
+            <a
+              href="https://github.com/andregozubuyukoglu"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub className="text-xl" />
             </a>
           </li>
           <li>
-            <a href="">
-              <FaLinkedin />
+            <a
+              href="https://www.linkedin.com/in/andre-g%C3%B6z%C3%BCb%C3%BCy%C3%BCko%C4%9Flu/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="text-xl" />
             </a>
           </li>
         </ul>
       </div>
-    </>
+    </div>
   )
 }
