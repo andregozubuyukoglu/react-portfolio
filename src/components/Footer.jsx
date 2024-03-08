@@ -16,7 +16,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub className="text-xl" />
+              <FaGithub className="text-2xl" />
             </a>
           </li>
           <li>
@@ -25,7 +25,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin className="text-xl" />
+              <FaLinkedin className="text-2xl" />
             </a>
           </li>
         </ul>
